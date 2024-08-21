@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #ecdc45; */
+    background: linear-gradient(90deg, #f86c70, #ece919,  #0fafbb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.container {
+    background: linear-gradient(180deg, #ffb5b7, #c3fffd,  #ffd57a);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 500px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: crimson;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border-radius: 10PX;
+}
+
+button {
+    background-color: #f3dc12;
+    color: rgb(59, 54, 54);
+    margin: 2%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transform: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
