@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files for Task 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Files Operation Employment Agreement</h1>
+        <form action="{{ url_for('process_operation_ea', task='task1') }}" method="post" enctype="multipart/form-data">
+            <label for="file1">Darwin Details file:</label>
+            <input type="file" id="file1" name="file1" required><br><br>
+
+            <label for="file2">EA Tracker file:</label>
+            <input type="file" id="file2" name="file2" required><br><br>
+
+            <button type="submit">Process Files</button>
+        </form>
+    </div>
+</body>
+</html>
+

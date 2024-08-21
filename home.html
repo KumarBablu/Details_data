@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Agreement Details </h1>
+        <h2>Choose The required operation </h2>
+        <button onclick="window.location.href='{{ url_for('upload', task='task1') }}'">Employment Agreement Operation </button>
+        <button onclick="window.location.href='{{ url_for('upload', task='task2') }}'">Zero Tolerence Pollicy For Builder Channel</button>
+        <button onclick="window.location.href='{{ url_for('upload', task='task3') }}'">Zero Tolerence Pollicy For Nobroker Dot Com</button>
+        <button onclick="window.location.href='{{ url_for('upload', task='task4') }}'">Employment Agreement Engineering and Marketion</button>
+    </div>
+</body>
+</html>
